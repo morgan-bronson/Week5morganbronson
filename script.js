@@ -8,13 +8,11 @@ function calculatearea () {
   let PI = 3.14159265359
   let A = 0
   let C = 0
+  
   D = document.getElementById('D').value
-  R = document.getElementById('R').value
-  PI = document.getElementById('PI').value
-  A = document.getElementById('A').value
-  C = document.getElementById('C').value
   R = parseFloat(D) / 2
-  A = (parseFloat(R) ^ 2) * parseFloat(PI)
+  A = PI * (R * R)
   alert(A)
-  C = (2 * parseFloat(PI)) * parseFloat(R)
+  C = 2 * PI * R
+  alert(C)
 }
